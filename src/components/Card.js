@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const Card = () => {
+const Card = ({ country }) => {
   return (
-    <li>
-        <div className="card">
-            <h2>Nom du pays</h2>
-        </div>
+    <li className="card">
+      <img src={country.flags.svg} alt={country.name.common} />
+      <div className="infos">
+        <h2>{country.name.common}</h2>
+        <h4>{country.capital}</h4>
+        <p>Pop. {country.population.toLocaleString()}</p>
+      </div>
     </li>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

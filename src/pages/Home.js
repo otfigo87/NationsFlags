@@ -9,7 +9,6 @@ const Home = () => {
     <div>
       <Logo />
       <Navigation />
-      <h1>Home</h1>
       <Countries />
     </div>
   );
